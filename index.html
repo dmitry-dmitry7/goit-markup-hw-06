@@ -54,7 +54,12 @@
           </ul>
         </address>
 
-        <button class="burger-btn" type="button" data-menu-open>
+        <button
+          class="burger-btn"
+          type="button"
+          aria-label="Open menu button"
+          data-menu-open
+        >
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -158,7 +163,7 @@
 
     <main class="page-main">
       <!-- hero image -->
-      <section class="hidden section-hero">
+      <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
@@ -167,8 +172,8 @@
         </div>
       </section>
 
-      <!-- Section 1 -->
-      <section class="hidden section-feature section">
+      <!-- Feature Section 1 -->
+      <section class="section-feature section">
         <div class="container">
           <h2 class="feature-title visually-hidden">Feature</h2>
           <ul class="feature-list">
@@ -224,17 +229,22 @@
         </div>
       </section>
 
-      <!-- Section 2 -->
-      <section class="hidden section-team section">
+      <!-- Team Section 2 -->
+      <section class="section-team section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
                 class="team-item-img"
-                src="./images/mark.jpg"
+                srcset="
+                  ./images/team/mark-min.jpg,
+                  ./images/team/mark@2x-min.jpg 2x
+                "
+                src="./images/team/mark-min.jpg"
                 alt="Mark Guerrero"
                 width="264"
+                loading="lazy"
               />
               <div class="team-item-content">
                 <h3 class="team-item-title">Mark Guerrero</h3>
@@ -298,9 +308,14 @@
             <li class="team-item">
               <img
                 class="team-item-img"
-                src="./images/tom.jpg"
+                srcset="
+                  ./images/team/tom-min.jpg    1x,
+                  ./images/team/tom@2x-min.jpg 2x
+                "
+                src="./images/team/tom-min.jpg"
                 alt="Tom Ford"
                 width="264"
+                loading="lazy"
               />
               <div class="team-item-content">
                 <h3 class="team-item-title">Tom Ford</h3>
@@ -364,9 +379,14 @@
             <li class="team-item">
               <img
                 class="team-item-img"
-                src="./images/camila.jpg"
+                srcset="
+                  ./images/team/camila-min.jpg    1x,
+                  ./images/team/camila@2x-min.jpg 2x
+                "
+                src="./images/team/camila-min.jpg"
                 alt="Camila Garcia"
                 width="264"
+                loading="lazy"
               />
               <div class="team-item-content">
                 <h3 class="team-item-title">Camila Garcia</h3>
@@ -430,9 +450,14 @@
             <li class="team-item">
               <img
                 class="team-item-img"
-                src="./images/daniel.jpg"
+                srcset="
+                  ./images/team/daniel-min.jpg    1x,
+                  ./images/team/daniel@2x-min.jpg 2x
+                "
+                src="./images/team/daniel-min.jpg"
                 alt="Daniel Wilson"
                 width="264"
+                loading="lazy"
               />
               <div class="team-item-content">
                 <h3 class="team-item-title">Daniel Wilson</h3>
@@ -497,8 +522,8 @@
         </div>
       </section>
 
-      <!-- Section 3 -->
-      <section class="hidden section-portfolio section">
+      <!-- Portfolio Section 3 -->
+      <section class="section-portfolio section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
